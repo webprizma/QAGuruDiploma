@@ -14,12 +14,12 @@ import static api.specs.Specs.*;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Tag("login")
+@Tag("api")
 public class LoginTests {
     @Epic("ReqresIn api autotests")
     @Story("Login tests")
     @Feature("Successful login test")
-    @Tag("login")
-    @Tag("api")
     @Test
     void userLoginSuccessfulTest() {
         UserCredentialsModel userCredentialsModel = new UserCredentialsModel();
@@ -45,8 +45,6 @@ public class LoginTests {
     @Epic("ReqresIn api autotests")
     @Story("Login tests")
     @Feature("Unsuccessful login test")
-    @Tag("login")
-    @Tag("api")
     @Test
     void userLoginUnsuccessfulTest() {
         UserCredentialsModel userCredentialsModel = new UserCredentialsModel();

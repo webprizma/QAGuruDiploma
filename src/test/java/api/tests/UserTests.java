@@ -15,12 +15,12 @@ import static api.specs.Specs.*;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Tag("users")
+@Tag("api")
 public class UserTests {
     @Epic("ReqresIn api autotests")
     @Story("User tests")
     @Feature("Get users list test")
-    @Tag("users")
-    @Tag("api")
     @Test
     void userListTest() {
         UserListModel response = given()
@@ -40,8 +40,6 @@ public class UserTests {
     @Epic("ReqresIn api autotests")
     @Story("User tests")
     @Feature("Get single user test")
-    @Tag("users")
-    @Tag("api")
     @Test
     void singleUserTest() {
         SingleUserDataModel response = given()
@@ -61,8 +59,6 @@ public class UserTests {
     @Epic("ReqresIn api autotests")
     @Story("User tests")
     @Feature("User not found test")
-    @Tag("users")
-    @Tag("api")
     @Test
     void unknownUserTest() {
         given()
@@ -78,8 +74,6 @@ public class UserTests {
     @Epic("ReqresIn api autotests")
     @Story("User tests")
     @Feature("Create user test")
-    @Tag("users")
-    @Tag("api")
     @Test
     void userCreateTest() {
         UserModel userModel = new UserModel();
@@ -105,8 +99,6 @@ public class UserTests {
     @Epic("ReqresIn api autotests")
     @Story("User tests")
     @Feature("Update user test")
-    @Tag("users")
-    @Tag("api")
     @Test
     void userUpdateTest() {
         UserModel userModel = new UserModel();
@@ -132,8 +124,6 @@ public class UserTests {
     @Epic("ReqresIn api autotests")
     @Story("User tests")
     @Feature("Delete user test")
-    @Tag("users")
-    @Tag("api")
     @Test
     void userDeleteTest() {
         given()
