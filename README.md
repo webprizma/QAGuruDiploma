@@ -71,6 +71,11 @@ gradle clean web
 gradle clean api
 ```
 
+Можно запустить отдельные тесты, заменив mobile на:
+- login - тесты авторизации
+- registration - тесты регистрации
+- users - тесты списка пользователей
+
 ## :computer: Локальный запуск мобильных тестов приложения Wildberries
 
 С использованием Browserstack:
