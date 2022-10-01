@@ -66,6 +66,12 @@ tasks.withType(Test) {
     }
 }
 
+task web(type: Test) {
+    useJUnitPlatform {
+        includeTags "web"
+    }
+}
+
 task menu(type: Test) {
     useJUnitPlatform {
         includeTags "menu"
@@ -96,15 +102,15 @@ task locale(type: Test) {
     }
 }
 
-task web(type: Test) {
-    useJUnitPlatform {
-        includeTags "web"
-    }
-}
-
 task mobile(type: Test) {
     useJUnitPlatform {
         includeTags "mobile"
+    }
+}
+
+task mobileSearch(type: Test) {
+    useJUnitPlatform {
+        includeTags "mobileSearch"
     }
 }
 

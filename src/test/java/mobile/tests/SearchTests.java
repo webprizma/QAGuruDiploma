@@ -16,7 +16,7 @@ public class SearchTests extends TestBase {
     @Epic("Wildberries mobile autotests")
     @Story("Search tests")
     @Feature("Basic search test")
-    @Tag("search")
+    @Tag("mobileSearch")
     @Tag("mobile")
     @ParameterizedTest
     @CsvSource(value = {
