@@ -15,12 +15,12 @@ import org.junit.jupiter.params.provider.EnumSource;
 import static com.codeborne.selenide.Condition.*;
 import static io.qameta.allure.Allure.step;
 
+@Tag("menu")
+@Tag("web")
 public class MenuTests extends TestBase {
     @Epic("Wildberries web autotests")
     @Story("Menu tests")
     @Feature("Basic menu test")
-    @Tag("menu")
-    @Tag("ui")
     @Test
     void openMenuTest() {
         step("Открыть главную страницу", () ->
@@ -36,8 +36,6 @@ public class MenuTests extends TestBase {
     @Epic("Wildberries web autotests")
     @Story("Menu tests")
     @Feature("First level menu test")
-    @Tag("menu")
-    @Tag("ui")
     @ParameterizedTest
     @EnumSource(Categories.class)
     void openFirstLevelCategoryTest(Categories category) {
@@ -57,8 +55,6 @@ public class MenuTests extends TestBase {
     @Epic("Wildberries web autotests")
     @Story("Menu tests")
     @Feature("Second level menu test")
-    @Tag("menu")
-    @Tag("web")
     @Test
     void openSecondLevelCategoryTest() {
         step("Нажать на кнопку Бургер меню", () ->
@@ -77,8 +73,6 @@ public class MenuTests extends TestBase {
     @Epic("Wildberries web autotests")
     @Story("Menu tests")
     @Feature("Third level menu test")
-    @Tag("menu")
-    @Tag("ui")
     @Test
     void openThirdLevelCategoryTest() {
         step("Открыть главную страницу", () ->

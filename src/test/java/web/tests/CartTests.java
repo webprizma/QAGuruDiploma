@@ -11,12 +11,12 @@ import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
+@Tag("cart")
+@Tag("web")
 public class CartTests extends TestBase {
     @Epic("Wildberries web autotests")
     @Story("Cart tests")
     @Feature("Add to cart")
-    @Tag("cart")
-    @Tag("web")
     @ParameterizedTest
     @CsvSource(value = {
             "/catalog/64985433/detail.aspx, Полка для ванной на присосках без сверления настенная пластиковая навесная полочка для душа туалета"

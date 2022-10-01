@@ -10,12 +10,12 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static com.codeborne.selenide.Condition.text;
 import static io.qameta.allure.Allure.step;
 
+@Tag("locale")
+@Tag("web")
 public class LocalizationTests extends TestBase {
     @Epic("Wildberries web autotests")
     @Story("Localization tests")
     @Feature("Change country")
-    @Tag("locale")
-    @Tag("web")
     @ParameterizedTest
     @CsvSource(value = {
             "Армения, Ереван",

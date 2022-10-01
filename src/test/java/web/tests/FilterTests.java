@@ -12,12 +12,12 @@ import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.Condition.text;
 import static io.qameta.allure.Allure.step;
 
+@Tag("filter")
+@Tag("web")
 public class FilterTests extends TestBase {
     @Epic("Wildberries web autotests")
     @Story("Filter tests")
     @Feature("Filter by category")
-    @Tag("filter")
-    @Tag("web")
     @ParameterizedTest
     @CsvSource(value = {
             "Дом, Ванная, Аксессуары, Категория, Держатель для ванной, Держатель для ванной"
@@ -47,8 +47,6 @@ public class FilterTests extends TestBase {
     @Epic("Wildberries web autotests")
     @Story("Filter tests")
     @Feature("Filter by brand")
-    @Tag("filter")
-    @Tag("ui")
     @ParameterizedTest
     @CsvSource(value = {
             "Дом, Ванная, Аксессуары, Бренд, Сималенд, Сималенд"
