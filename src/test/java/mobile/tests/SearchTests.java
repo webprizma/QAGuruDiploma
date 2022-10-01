@@ -12,12 +12,12 @@ import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.text;
 import static io.qameta.allure.Allure.step;
 
+@Tag("mobileSearch")
+@Tag("mobile")
 public class SearchTests extends TestBase {
     @Epic("Wildberries mobile autotests")
     @Story("Search tests")
     @Feature("Basic search test")
-    @Tag("mobileSearch")
-    @Tag("mobile")
     @ParameterizedTest
     @CsvSource(value = {
             "Sony PlayStation"
