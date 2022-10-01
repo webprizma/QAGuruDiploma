@@ -64,6 +64,13 @@ gradle clean web
  -Dremote=${REMOTE}
 ```
 
+Можно запустить отдельные тесты, заменив mobile на:
+- menu - тесты меню
+- search - тесты поиска
+- filter - тесты фильтров
+- cart - тесты корзины
+- locale - тесты локализации
+
 ## :computer: API тесты reqres.in
 
 Локальный запуск API тестов:
