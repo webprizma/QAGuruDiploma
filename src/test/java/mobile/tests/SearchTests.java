@@ -38,7 +38,6 @@ public class SearchTests extends TestBase {
         step("Должны быть результаты поиска", () ->
                 searchScreen.searchResultCards.shouldHave(sizeGreaterThan(0)));
 
-        //todo не ищет по результатам
         step("Должен быть товар с вхождением поискового запроса {0}", () ->
                 searchScreen.searchResultCardsNames.shouldHave(itemWithText(searchPhrase)));
     }
