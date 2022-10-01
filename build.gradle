@@ -8,15 +8,16 @@ repositories {
     mavenCentral()
 }
 
-def selenideVersion = '6.7.3',
+def selenideVersion = '6.7.4',
     allureVersion = '2.19.0',
-    restAssuredVersion = "5.1.1",
+    restAssuredVersion = '5.2.0',
     fakerVersion = "1.0.2",
     ownerVersion = "1.0.12",
-    appiumVersion = "8.1.1",
+    appiumVersion = '8.2.0',
     commonsVersion = "2.11.0",
-    slf4jVersion = '2.0.0',
-    junitVersion = '5.9.0'
+    slf4jVersion = '2.0.1',
+    junitVersion = '5.9.0',
+    assertjVersion = '3.23.1'
 
 
 allure {
@@ -44,7 +45,8 @@ dependencies {
             "commons-io:commons-io:$commonsVersion",
             "io.appium:java-client:$appiumVersion",
             "org.slf4j:slf4j-simple:$slf4jVersion",
-            "org.junit.jupiter:junit-jupiter:$junitVersion"
+            "org.junit.jupiter:junit-jupiter:$junitVersion",
+            "org.assertj:assertj-core:$assertjVersion"
     )
 }
 
@@ -103,5 +105,29 @@ task web(type: Test) {
 task mobile(type: Test) {
     useJUnitPlatform {
         includeTags "mobile"
+    }
+}
+
+task api(type: Test) {
+    useJUnitPlatform {
+        includeTags "api"
+    }
+}
+
+task login(type: Test) {
+    useJUnitPlatform {
+        includeTags "login"
+    }
+}
+
+task registration(type: Test) {
+    useJUnitPlatform {
+        includeTags "registration"
+    }
+}
+
+task users(type: Test) {
+    useJUnitPlatform {
+        includeTags "users"
     }
 }
