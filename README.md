@@ -71,14 +71,7 @@ gradle clean web
 gradle clean api
 ```
 
-## :computer: Мобильные тесты приложения Wildberries
-
-Локальный запуск мобильных тестов:
-```
-gradle clean mobile
-```
-
-## :keyboard: Команда запуска тестов локально в IntelliJ в терминале
+## :computer: Локальный запуск мобильных тестов приложения Wildberries
 
 С использованием Browserstack:
 ```
